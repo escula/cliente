@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td,th{
+            border: 1px solid black;
+        }
+        table{
+            border: 1px solid black;
+
+        }
+    </style>
+    <!-- Ejercicio 1: Genera unapágina HTML con una función en JavaScript que devuelva el mayor de 2 números que pida el usuario y que muestre:
+    'El número mayor entre NUM1 y NUM2 es XXXX'
+COntrolar que los datos recogidos sean tambien números-->
+
+    <script>
+    let numero1,numero2;
+    do{
+        numero1=prompt("Introduce numero1");
+    }while(!numero1.match(/[0-9]{1,}/));
+    do{
+        numero2=prompt("Introduce numero2");
+    }while(!numero1.match(/[0-9]{1,}/));
+    document.write(introducirNumero(numero1,numero2))
+    function introducirNumero(num1,num2){
+        num1>num2? resultado=num1 : resultado=num2;
+        return resultado;
+
+    }
+    </script>    
+</head>
+<body>
+    <div>
+
+    </div>
+    
+</body>
+</html>

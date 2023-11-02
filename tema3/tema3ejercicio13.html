@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Tema 3: Desarrollo Web ern entorno cliente
+        Author: Andres Rozados Ramos
+        Ejercicio 12:Genera un HTML que pida un nombre y que compruebe que no está vació ni que tiene una longitud mayor que 50 caracteres
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let introducido=prompt("introduce tu nombre");
+        if(!introducido){
+            document.write("vacio, introduzca entre 1 y 50 caracteres");
+        }else if(introducido.length>50){
+            document.write("Demasiado largo, introduzca entre 1 y 50 caracteres");
+        }else if(!isNaN(introducido)){
+            document.write("No se permite numero, introduzca entre 1 y 50 caracteres SIN NUMEROS");
+        }
+
+        
+
+            
+        
+    </script>
+</head>
+    
+<body>
+    
+</body>
+</html>

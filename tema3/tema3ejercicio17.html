@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Ejercicio 17: Declara un array que vamos a llamar <<Clasificaciónes>> con los siguientes valores:
+    Ana,Oswald,Raúl,Celia,Maria,Antonio
+    VAmos a suponer que es el orden de clasificación de un concurso, en un momento dado. Imprime la clasificación actual.
+    El curso continua, y se van modificando las posiciones anteriores. Debemos cambiar el arrat:
+    -celia adelanta Raúl.
+    - Antonio es descalificado y se elimina del concurso
+    - Detras de Ana y antes de Oswalo se clasifican dos nuevos concurantes,: Roberto y Amaya, en ese caso.
+    - Hay una nueva participante que pasa a encabezar la clasificación: Marta imprime la clasificación actualizada y comprueba que se ha hecho correctamente
+    Utiliza para ello las funciones slice,indexof y unshif cuando corresponda -->
+    <script>
+        let concursantes=['Ana','Oswald','Raúl','Celia','Antonio'];
+        imprimir(concursantes);
+
+        let sustituir=concursantes[concursantes.indexOf('Raúl')];
+        concursantes[concursantes.indexOf('Raúl')]=concursantes[concursantes.indexOf('Celia')];
+
+        console.log(concursantes.indexOf('Celia'));
+
+        concursantes[concursantes.indexOf('Celia')+1]=sustituir;
+        console.log(concursantes.indexOf('Raúl'));
+        imprimir(concursantes);
+        concursantes.splice()
+
+
+        function imprimir(concurs){
+            for (const iterator of concurs) {
+                document.write('</br>'+iterator);
+            }
+            document.write('</br>---------------------------------');
+            
+        }
+        
+    </script>    
+</head>
+<body>
+    <div>
+
+    </div>
+    
+</body>
+</html>

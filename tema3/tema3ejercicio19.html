@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td,th{
+            border: 1px solid black;
+        }
+        table{
+            border: 1px solid black;
+
+        }
+    </style>
+    <!-- Ejercicio 19: Toma el anterior array y muestralo impreso en una tabla de esta manera document.write(<''table>)-->
+    <script>
+        let array=[
+            ["Nombre","Asignatura","Edad"],
+            ["Cristina","Seguridad",24],
+            ["Catalina","Base de datos",17],
+            ["Vietis","Sistemas informáticos",28],
+            ["Benjamin","Redes",26]]
+        imprimir();
+
+
+        function imprimir(){
+            document.write('<table>');
+            for (const fila of array) {
+                document.write("<tr>");
+                    for (const elemento of fila) {
+                        document.write("<td>"+elemento+"</td>");
+                    }
+                document.write("</tr>");
+            
+            }
+            document.write('</table>')
+        }
+       
+        
+    </script>    
+</head>
+<body>
+    <div>
+
+    </div>
+    
+</body>
+</html>

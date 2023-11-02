@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Tema 3: Desarrollo Web ern entorno cliente
+        Author: Andres Rozados Ramos
+        Ejercicio 6: Crea un progrma que genere un número aleatorio entre 1 y 20. Luego, 
+        pide al usuario que adivine el número. Para generar el número aleatorio utiliza la función Math.random() 
+        y Math.floor() para poner el tope. Utiliza un blucle do...while 
+        para permitir al usuario realizar varios intentos hasta que adibine el número correto. 
+
+        Indica pistas al usuario mostrando si es mayor o menos si no consigue acertar
+        Cuando rl suario adivine el número, muestra un mensaje de felitación con el número de intentos que ha necesitado
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let number=parseInt(Math.random()*20);
+        document.write('Numero a adivinar: ',number+'');//Impirme por pantalla el 
+        setTimeout(function(){
+            let numeroUsuario;
+            do{
+                numeroUsuario=prompt("Adivina el número que esta entre 1 - 20")
+            }while(numeroUsuario!=number);
+            document.write('Lo has adivinado');
+        },50);
+
+
+        
+        
+
+    </script>
+</head>
+    
+<body>
+    
+</body>
+</html>

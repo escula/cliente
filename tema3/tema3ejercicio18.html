@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Ejercicio 18: Declara arrays paralelos que contengan 3 alumno y sus cartas
+        estudiantes:['Juan','María','Pedro'];
+        calificaciones:[95,88,78];
+
+        Muestralos por pantall
+        Añade un nueva estidiante Ana con un 63
+        Actualiza la nota de maría a 98
+        Elimina a Pedro
+
+    -->
+    <script>
+        let estudiantes=['Juan','María','Pedro'];
+        let calificaciones=[95,88,78];
+        imprimir(estudiantes);
+        anadirEstudiante('Ana',63);
+        actualizarNota('María',98);
+        imprimir(estudiantes);
+        eliminaAlumno('María')
+        imprimir(estudiantes);
+
+        function imprimir(){
+            for (const iterator in estudiantes) {
+                document.write('</br>'+estudiantes[iterator]+' Nota: '+calificaciones[iterator]);
+            }
+            document.write('</br>---------------------------------');
+            
+        }
+        function anadirEstudiante(nombre,nota){
+            estudiantes.push(nombre);
+            calificaciones.push(nota);
+        }
+        function actualizarNota(nombre,notaNueva){
+            calificaciones[estudiantes.indexOf(nombre)]=notaNueva;
+
+        }
+        function eliminaAlumno(nombre){
+            indice=estudiantes.indexOf(nombre);
+            delete(estudiantes[indice]);
+            delete(calificaciones[indice]);
+
+        }
+        
+    </script>    
+</head>
+<body>
+    <div>
+
+    </div>
+    
+</body>
+</html>

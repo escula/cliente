@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td,th{
+            border: 1px solid black;
+        }
+        table{
+            border: 1px solid black;
+
+        }
+    </style>
+    <!-- Ejercicio 20: Teniedo un array tipo objeto de biblioteca con estos datos Comrpueba:
+    - Verifica el argumento es realmente un array utilizado Array.isArray().
+    - Verifica si el array está vacío ciomprobando su longitud.
+    - Recorre el array verifica si cada elemento contiene las propiedades titulo, autor y publicación, y ninguna está vacía o no existe.
+    - Recorre el array y verifica:
+        . el título puede contener cifras y letras
+        . Autor puede contener solo letras
+        . Publicación es un año entre el 100 y el actual-->
+
+    <script>
+        var biblioteca = [ { titulo: "La Sombra del viento", autor: "C Ruiz Zafón ", publicacion: 2998 },{ titulo: "Fahrenheit 451", autor: "Ray 212", publicacion: 2000 },{ titulo: "El Buscón", autor: "Quevedo " } ];
+        var objeto={
+            a:32,b:"fesfew",c:324
+        }
+        for (const key of Object.entries(objeto)) {
+            console.log(key);
+        }
+        // if(Array.isArray(biblioteca)){
+        //     if(biblioteca.length!=0){
+        //         if (comprobandoIntegridad()) {
+                    
+        //         } else {
+                    
+        //         }
+        //     }else{
+        //         console.log("El tamaño del array es 0")
+        //     }
+        // }else{
+        //     console.log("No existe array")
+        // }
+        
+        // function comprobandoIntegridad() {
+        //     let resultado=true;
+        //     for (const index in biblioteca) {
+        //         let numeroDeVeces=0;
+        //         for (const [key,value] of biblioteca[index]) {
+        //             if(key==="titulo",key==="autor",key==="publicacion"){
+        //                 numeroDeVeces++;
+        //                 console.log("entra");
+        //             }
+        //         }
+        //     }
+        //     return resultado;
+        // }
+    </script>    
+</head>
+<body>
+    <div>
+
+    </div>
+    
+</body>
+</html>

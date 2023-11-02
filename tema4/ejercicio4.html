@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Genera una función calculadora similar al ejercicio del tema 2. Dentro de ella existirá la función calcular()
+    Lanzará las funciones dentro de calcular
+
+    Suma()
+    Resta()
+    Multiplicacion()
+    Divisón()
+
+    Lanzará la función reiniciarResultado() antes de cada una de ellas
+
+    Esta es la suma + Document.write(resultado) 
+    Esta es la resta + Document.write(resultado) 
+    …… -->
+    <script>
+        let resultado=0;
+        numero1=prompt('Introducir numero1');
+        numero2=prompt('Introducir numero1');
+        calcular(numero1,numero2);
+        function calcular(num1,num2) {
+            resultado=sumar(num1,num2);
+            Document.write("Esta es la suma "+resultado);
+            reiniciarResultado();
+
+            resultado=restar(num1,num2);
+            Document.write("Esta es la suma "+resultado);
+            reiniciarResultado()
+
+            resultado=restar(num1,num2);
+            Document.write("Esta es la suma "+resultado);
+            reiniciarResultado();
+            
+            resultado=division(num1,num2);
+            Document.write("Esta es la suma "+resultado);
+            reiniciarResultado();
+        }
+
+        function sumar(numero1,numero2) {
+            return numero1+numero2
+        }
+        function restar(numero1,numero2) {
+            return numero1-numero2
+        }
+        function multiplicar(numero1,numero2) {
+            return numero1*numero2
+        }
+        function division(numero1,numero2) {
+            return numero1/numero2
+        }
+        function reiniciarResultado(){
+            resultado=0;
+        }
+    </script>
+</head>
+<body>
+    <main>
+        
+
+    </main>
+</body>
+</html>

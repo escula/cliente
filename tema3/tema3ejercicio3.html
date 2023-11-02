@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+        Tema 3: Desarrollo Web ern entorno cliente
+        Author: Andres Rozados Ramos
+        Ejercicio3: Crea un progrma que pida al usuario ingresar un número del 1 al 7, donde 1 corresponde al lunes, 2 al martes, y así sucesivamente. El progrma debe pedir al usuario un número del 1 al 7 y determinar el día de la semana correspondiente mostrándolo en pantalla. usar sentencias switch
+
+     -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema3ejercicio2</title>
+    <script>
+        // declaración de variables
+        let answer = +prompt("Introduce un numero del 1 al 7");
+
+        switch (answer) {
+            case 1:
+                document.write('Lunes');
+                break;
+            case 2:
+                document.write('Martes');
+                break;
+            case 3:
+                document.write('Miercoles');
+                break;
+            case 4:
+                document.write('Jueves');
+                break;
+            case 5:
+                document.write('Viernes');
+                break;
+            case 6:
+                document.write('Sabado');
+                break;
+            case 7:
+                document.write('Domingo');
+                break;
+            default:
+                document.write('Introduzca un numero entre el 1 y el 7')
+                break;
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

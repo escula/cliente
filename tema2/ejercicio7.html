@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    let letVariable=1234;
+    var varVariable=1234;
+    function funcion(){
+        letVariable=4;
+        varVariable=4;
+        let dentro=54
+        console.log("let dentro funcion:"+letVariable);
+        console.log("var dentro funcion:"+varVariable);
+
+    }
+    funcion();
+
+    console.log("let fuera funcion:"+dentro);
+    console.log("let fuera funcion:"+letVariable);
+    console.log("var fuera funcion:"+varVariable);
+
+</script>
+</head>
+
+<body>
+    
+</body>
+</html>

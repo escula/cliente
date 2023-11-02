@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        Tema 3: Desarrollo Web ern entorno cliente
+        Author: Andres Rozados Ramos
+        Ejercicio 5: Crea un programa que pida al suario ingresar un número entero
+        positivo. Luego, utiliza un blucle while para mostrar por pantalla todos los 
+        números desde el número ingresado hasta 1, en orden inverso y separados 
+        por comas.
+        Añadir comprobación de que el número sea positivo, si no informar de que no 
+        es válido.
+     -->
+    <script>
+        let numero=parseInt(prompt('Introduce número'));
+        if(numero>0){
+            while(numero!=0){
+                document.write((numero--)+',');
+                
+            }
+        }else{
+            document.write('No se puede negativo');
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
