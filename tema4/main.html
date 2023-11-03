@@ -1,3 +1,4 @@
+<!-- No se ha realizado con promnt para no aumentar el coste de interacción -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,16 +12,18 @@
 </head>
 <body>
     <main id="main">
+        <header><p id="numeroDePartidas"><span>Partida: 0</span></p></header>
         <section>
-            <header>Juega al piedra, papel, tijera</header>
+            <header><h1>Juega al piedra, papel, tijera</h1></header>
             <div>
                 <button onclick="jugar('piedra')">Piedra</button>
                 <button onclick="jugar('papel')">papel</button>
                 <button onclick="jugar('tijera')">tijera </button>
             </div>
-            <header>
-                <p></p>
-            </header>
+            <footer>
+                <p id="resultado"></p>
+                
+            </footer>
         </section>
 
         
