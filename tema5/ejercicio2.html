@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        Tema5
+        Nombre: Andrés Rozados Ramos
+        Ejercicio2: Crear un archivo HTML que muestre un mensaje a los 3 segundos de abrir el archivo que diga 'han pasado 3 segundos'(usa la función setTmeout)
+        Tras ello muestra u mensaje cada 2 segundos hasta un total de 5 vences que diga 'Mensaje que se repite cada 2 segundos'(usar funcion serInterval)
+
+
+    -->
+    <script defer>
+        setTimeout(() => {
+            let elemento=document.createTextNode("han pasado 3 segundos");
+            document.querySelector("body").appendChild(elemento);
+            setInterval(() => {
+                let elemento=document.createTextNode("Mensaje que se repite cada 2 segundos");
+                document.querySelector("body").appendChild(elemento);
+            }, 2000);
+
+        }, 3000);
+    </script>
+</head>
+<body>
+</body>
+</html>

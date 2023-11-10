@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        Tema5
+        Nombre: Andrés Rozados Ramos
+        Ejercicio1: Crear un archivo HTML con 2 botones con los que puedas abrir y cerrar una subventana que abra la wikipedia
+
+    -->
+    <script defer>
+        let wikipedia;
+        function abrirWiki(){
+            wikipedia=window.open(url="https://www.wikipedia.org/","_blank",features="height=200 width=100");
+        }
+        function cerrarWiki(){
+            wikipedia.close();
+        }
+    </script>
+</head>
+<body>
+    <button onclick="abrirWiki()">Abrir wiki</button>
+    <button onclick="cerrarWiki()">Cerrar wiki</button>
+</body>
+</html>
