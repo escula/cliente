@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        Tema5
+        Nombre: Andrés Rozados Ramos
+        Ejercicio 5: Genera una link al final de la página de camisetas que se llame ‘Información Navegador’ que abra una ventana y 
+        que muestre la siguiente información mediante el uso del objeto window.navigator
+
+        Nombre del navegador: 
+        Versión del navegador: 
+        Idioma del navegador: 
+        Plataforma:
+ 
+
+
+
+    -->
+    <script defer>
+        function generarVentanaEmergente(){
+            let subventana=window.open(url=".","_blank",features="height=500 width=200");
+            document.write(window.innerWidth);
+            let ancho=subventana.innerWidth;
+            let alto=subventana.innerHeight;
+            subventana.document.write("Ancho: "+ancho+" Alto: "+alto+"url");
+        }
+        
+        
+    </script>
+    <button onclick="generarVentanaEmergente()">macaco</button>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        Tema5
+        Nombre: Andrés Rozados Ramos
+        Modificar el archivo tiendacamisetas.html y contacto.html, para que podamos navegar entre ellas.
+         Se generará una función navegar() para ir a las páginas diferentes al inicio y una función volverInicio() 
+         para regresar a la portada. Añadir en contacto un botón para abrir el map de Google.
+
+Las funciones deben usar el objeto window.location 
+
+
+
+    -->
+    <script defer>
+        function generarVentanaEmergente(){
+            let subventana=window.open(url=".","_blank",features="height=500 width=200");
+            document.write(window.innerWidth);
+            let ancho=subventana.innerWidth;
+            let alto=subventana.innerHeight;
+            subventana.document.write("Ancho: "+ancho+" Alto: "+alto+"url");
+        }
+        
+        
+    </script>
+    <button onclick="generarVentanaEmergente()">macaco</button>
+</head>
+<body>
+</body>
+</html>

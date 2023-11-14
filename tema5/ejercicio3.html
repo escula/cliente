@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        Tema5
+        Nombre: Andrés Rozados Ramos
+        Ejercicio 3 .Genera un HTML con un botón. Al pulsarlo se abre una subventana y dentro de ella debe 
+        aparecer en pantalla el ancho y el alto de la pantalla actual y la URL
+
+
+    -->
+    <script defer>
+        function generarVentanaEmergente(){
+            let subventana=window.open(url=".","_blank",features="height=500 width=200");
+            document.write(window.innerWidth);
+            let ancho=subventana.innerWidth;
+            console.log(ancho);
+            let alto=subventana.innerHeight;
+            subventana.document.write("Ancho: "+ancho+" Alto: "+alto+"url");
+        }
+        
+        
+    </script>
+    <button onclick="generarVentanaEmergente()">macaco</button>
+</head>
+<body>
+</body>
+</html>

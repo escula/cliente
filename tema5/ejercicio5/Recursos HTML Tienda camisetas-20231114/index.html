@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Camisetas</title>
+    <link rel="stylesheet" href="styles_min.css">
+    <script defer>
+        function navegar(ruta){
+            open(url=ruta,"_self")
+        }
+        function informacion_Navegador(ruta){
+            let nuevaVentana=open(url="","blank",features="height=200 width=100");
+            nuevaVentana.document.write("Nombre app"+window.navigator.appName+
+            "navegador: " + window.navigator.appName
+    info + "\nVersión del navegador: " + window.navigator.appVersion
+    info + "\nIdioma del navegador: " + window.navigator.language
+    info +"\nPlataforma: " + window.navigator.platform)
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Tienda de Camisetas IES Ciudad Escolar</h1>
+        <nav>
+            <ul>
+                <li><a >Inicio</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a onclick="navegar('contacto.html')">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="producto">
+            <img src="camiseta_verde.jpg" alt="Camiseta Verde">
+            <h2>Camiseta Verde</h2>
+            <p>Camiseta de algodón en color verde. Tallas disponibles: S, M, L.</p>
+            <p class="precio">20.99e</p>
+            <button>Descripción</button>
+            <button>Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img src="camiseta_azul.jpg" alt="Camiseta Azul">
+            <h2>Camiseta Azul</h2>
+            <p>Camiseta de algodón en color azul. Tallas disponibles: S, M, L.</p>
+            <p class="precio">20.99e</p>
+            <button>Descripción</button>
+            <button>Añadir al carrito</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Tienda de Camisetas</p>
+        <a onclick="informacion_Navegador()">Mostrar info de navegador</a>
+    </footer>
+</body>
+</html>

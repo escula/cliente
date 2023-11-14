@@ -14,15 +14,23 @@
 
     -->
     <script defer>
-        setTimeout(() => {
+        let vencesRepetidas=0;
+        
+        let timeout=setTimeout(() => {
             let elemento=document.createTextNode("han pasado 3 segundos");
             document.querySelector("body").appendChild(elemento);
-            setInterval(() => {
+            let time=setInterval(() => {
                 let elemento=document.createTextNode("Mensaje que se repite cada 2 segundos");
                 document.querySelector("body").appendChild(elemento);
+
+                if(vencesRepetidas==4){
+                    clearInterval(time);
+                }
+                vencesRepetidas++;
             }, 2000);
 
         }, 3000);
+        
     </script>
 </head>
 <body>
