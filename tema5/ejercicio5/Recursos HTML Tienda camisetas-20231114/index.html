@@ -7,15 +7,12 @@
     <link rel="stylesheet" href="styles_min.css">
     <script defer>
         function navegar(ruta){
-            open(url=ruta,"_self")
+            window.location=ruta;
         }
         function informacion_Navegador(ruta){
             let nuevaVentana=open(url="","blank",features="height=200 width=100");
             nuevaVentana.document.write("Nombre app"+window.navigator.appName+
-            "navegador: " + window.navigator.appName
-    info + "\nVersión del navegador: " + window.navigator.appVersion
-    info + "\nIdioma del navegador: " + window.navigator.language
-    info +"\nPlataforma: " + window.navigator.platform)
+            "navegador: " + window.navigator.appNameinfo + "\nVersión del navegador: " + window.navigator.appVersioninfo + "\nIdioma del navegador: " + window.navigator.languageinfo +"\nPlataforma: " + window.navigator.platform)
         }
     </script>
 </head>
@@ -24,9 +21,9 @@
         <h1>Tienda de Camisetas IES Ciudad Escolar</h1>
         <nav>
             <ul>
-                <li><a >Inicio</a></li>
+                <li><a onclick="navegar('./index.html')">Inicio</a></li>
                 <li><a href="#">Catálogo</a></li>
-                <li><a onclick="navegar('contacto.html')">Contacto</a></li>
+                <li><a onclick="navegar('./contacto.html')">Contacto</a></li>
             </ul>
         </nav>
     </header>
