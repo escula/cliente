@@ -9,6 +9,9 @@
         function navegar(ruta){
             window.location=ruta;
         }
+        function volverAtras(){
+            window.back();
+        } 
     </script>
 </head>
 <body>
@@ -17,8 +20,9 @@
         <nav>
             <ul>
                 <li><a >Inicio</a></li>
-                <li><a href=# onclick="navegar('./index.html')">Catálogo</a></li>
-                <li><a href=# onclick="navegar('./contacto.html')">Contacto</a></li>
+                <li><a href="#" onclick="navegar('./index.html')">Catálogo</a></li>
+                <li><a onclick="navegar('./contacto.html')">Contacto</a></li>
+                <li><a onclick="volverAtras()">volver atras</a></li>
             </ul>
         </nav>
     </header>

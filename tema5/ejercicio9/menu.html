@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            list-style: none;
+            padding: 0px;
+        }
+        li:hover{
+            cursor: pointer;
+        }
+        ul li:first-child{
+            background-color: black;
+            color:white
+        }
+        ul li:nth-child(2){
+            background-color: gainsboro;
+            color:black;
+        }
+        ul li:nth-child(3){
+            background-color: ghostwhite;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <img src="logoEmpresa.png" alt="">
+    <ul>
+        <li onclick="cambiarFrame('entrante.html')">Entrante</li>
+        <li onclick="cambiarFrame('platoPrincipal.html')">Plato Principal</li>
+        <li onclick="cambiarFrame('postre.html')">Postre</li>
+    </ul>
+</body>
+<script>
+function cambiarFrame(nombrepagina){
+    parent.frames["plato"].location=nombrepagina;
+}
+</script>
+</html>

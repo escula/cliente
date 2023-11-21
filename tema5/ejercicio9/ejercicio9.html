@@ -1,0 +1,35 @@
+<!-- Ejercicio 9
+
+Crea una página HTML que represente el menú del día de un restaurante. 
+El HTML contendrá dos frames, donde uno contiene un menú simple  de 3 elementos que 
+indique entrante, plato principal y postre. 
+El otro frame  muestra el contenido relacionado con la opción seleccionada en el menú..
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina principal</title>
+    
+  </head>
+  <frameset cols="50%,50%">
+    <noframes>
+      <body> 
+        
+              
+      </body>
+    </noframes> 
+    <frame name="menu"src="menu.html"> 
+    <frame name="plato"src="entrante.html" > 
+    <!-- <frame name="entrante"src="entrante.html" > 
+    <frame name="postre"src="postre.html" >  -->
+  </frameset> 
+  <script>
+    function cambiarFrame(){
+      window.frames["postre"]
+    }
+  </script>
+
+</html> 

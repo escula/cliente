@@ -9,15 +9,19 @@
         function navegar(ruta){
             window.location=ruta;
         }
-        function informacionSesion(ruta){
+        function informacion_Navegador(ruta){
             let nuevaVentana=open(url="","blank",features="height=200 width=100");
             nuevaVentana.document.write("Nombre app: "+window.navigator.appName);
-            nuevaVentana.document.write("</br>navegador: " + window.navigator.appNameinfo);
-            nuevaVentana.document.write("</br>Versión del navegador: " + window.navigator.userAgent);
-            nuevaVentana.document.write("</br>Idioma del navegador: " + window.navigator.language);
+            nuevaVentana.document.write("</br>navegador: " + window.navigator.appNameinfo);//Obteniendo 
+            nuevaVentana.document.write("</br>Versión del navegador: " + window.navigator.userAgent);//Obteniendo info de navedor usado
+            nuevaVentana.document.write("</br>Idioma del navegador: " + window.navigator.language);//Obteniendo lenguaje navegador
             nuevaVentana.document.write("</br>Plataforma: " + window.navigator.platform);
         }
+        function volverAtras(){
+            window.back();
+        } 
     </script>
+
 </head>
 <body>
     <header>
@@ -27,6 +31,7 @@
                 <li><a >Inicio</a></li>
                 <li><a href="#" onclick="navegar('./index.html')">Catálogo</a></li>
                 <li><a onclick="navegar('./contacto.html')">Contacto</a></li>
+                <li><a onclick="volverAtras()">volver atras</a></li>
             </ul>
         </nav>
     </header>
@@ -50,7 +55,7 @@
     </main>
     <footer>
         <p>&copy; 2023 Tienda de Camisetas</p>
-        <a onclick="informacionSesion()">Mostrar info de navegador</a>
+        <a onclick="informacion_Navegador()">Mostrar info de navegador</a>
     </footer>
 </body>
 </html>

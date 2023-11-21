@@ -16,16 +16,16 @@
     <script defer>
         function generarVentanaEmergente(){
             let subventana=window.open(url=".","_blank",features="height=500 width=200");
-            document.write(window.innerWidth);
-            let ancho=subventana.innerWidth;
-            console.log(ancho);
-            let alto=subventana.innerHeight;
+            
+            let ancho=subventana.outerWidth;
+            let alto=subventana.outerHeight;
             subventana.document.write("Ancho: "+ancho+" Alto: "+alto+"url");
+            subventana.document.write("</br>ruta"+window.location.href);
         }
         
         
     </script>
-    <button onclick="generarVentanaEmergente()">macaco</button>
+    <button onclick="generarVentanaEmergente()">subventana</button>
 </head>
 <body>
 </body>

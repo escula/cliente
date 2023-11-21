@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+    Tema5
+    Nombre: Andrés Rozados Ramos
+    Ejercicio 6: Genera una link al final de la página de camisetas que se llame ‘Información Navegador’ que abra una ventana y 
+    que muestre la siguiente información mediante el uso del objeto window.navigator
+
+    Nombre del navegador: 
+    Versión del navegador: 
+    Idioma del navegador: 
+    Plataforma:
+-->
+<style>
+</style>
+    <script defer>
+        function pulsarBoton() {
+            let colores=["red","blue","green","orange","pink","yellow"];
+            let numeroRandom=parseInt(Math.random()*6);
+            document.querySelector('body').style.backgroundColor=colores[numeroRandom];
+        }
+    </script>
+</head>
+<body>
+    
+    <button onclick="pulsarBoton()">Cambiar color</button>
+</body>
+</html>
