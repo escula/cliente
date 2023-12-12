@@ -22,18 +22,27 @@
     <button id="mostrar">Mostrar Usuario</button>
     
     <script defer>
-        var id;
-        var contrasena;
-        var gamil;
-        function anadirUsuario(){
-            id=usuario.value;
-            contrasena=contra.value;
-            gamil=email.value;
-
-        }
-        function mostrarUsuario(){
-            console.log(id);
-            document.write(`nombre: ${id}, Contraseña: ${contrasena}, email:${gamil}`)
+        class Usuario{
+            constructor(nombre,password,email){
+                this.usuarios=[];
+                this.nombre=nombre;
+                this.password=password;
+                this.email=email;
+            }
+            //declarando toString
+            toString() {
+                return `nombre: ${this.nombre}, Contraseña: ${this.password}, email:${this.email}`;
+            }
+            anadirUsuario(){
+                id=usuario.value;
+                contrasena=contra.value;
+                gamil=email.value;
+    
+            }
+            mostrarUsuario(){
+                console.log(id);
+                document.write(`nombre: ${id}, Contraseña: ${contrasena}, email:${gamil}`)
+            }
         }
     </script>
 </body>

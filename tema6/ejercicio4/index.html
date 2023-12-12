@@ -1,1 +1,29 @@
-<!--  -->
+<!-- Ejercicio 4: Supongamos que estás construyendo un sistema para gestionar información de productos en una tienda. 
+    Crea una jerarquía de clases que incluya una clase base llamada Producto, 
+    y utiliza herencia mediante mixins y composición para agregar funcionalidades adicionales a las subclases.
+
+Clase Base: Producto: Debe tener las propiedades básicas de un producto, como nombre, precio y cantidad en stock.
+Agrega un método mostrarDetalles() que imprima en la consola el nombre, precio y cantidad en stock del producto.
+
+Metodo 1 (por mixin): PuedeVender: Crea un mixin llamado PuedeVender que tenga un método vender(cantidad) 
+que reduzca la cantidad en stock del producto según la cantidad especificada.
+
+ Metodo 2 ( por composición): SumaStock: Crea un mixin llamado SumaStock que tenga un método restock(cantidad)
+  que aumente la cantidad en stock del producto según la cantidad especificada.
+
+Subclase 1: Electrodomestico: Utiliza herencia mediante mixins para crear una subclase llamada 
+Electrodomestico que herede de Producto y tenga la capacidad de vender y reponer stock.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="producto.js"></script>
+</head>
+<body>
+    
+</body>
+</html>
