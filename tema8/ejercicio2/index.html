@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de billetes de tren</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            flex: 1;
+        }
+
+        header img {
+            max-width: 500px;
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        select {
+            width: 48%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        label.radio-label {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Estación de Atocha</h1>
+        <img src="img/atocha.JPG" alt="Estación de Atocha">
+    </header>
+    
+    <form>
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" name="username">
+        
+        <label for="travelDate">Fecha del viaje:</label>
+        <input type="date" id="travelDate" name="travelDate">
+        
+        <label>Tipo de viaje:</label>
+        <label class="radio-label" for="ida">
+            <input type="radio" id="ida" name="tripType" value="ida">
+            Ida
+        </label>
+        
+        <label class="radio-label" for="vuelta">
+            <input type="radio" id="vuelta" name="tripType" value="vuelta">
+            Ida y vuelta
+        </label>
+        
+        <label for="origen">Origen:</label>
+        <input type="text" id="origen" name="origen" value="Atocha Cercanías">
+        
+        <label for="destino">Destino:</label>
+        <select id="primerdestino" name="primerdestino">
+            <option value="dest1">Alicante</option>
+            <option value="dest2">Valencia</option>
+        </select>
+        
+        <select id="segundodestino" name="segundodestino"></select>
+        
+        <button type="submit">Comprar billete</button>
+    </form>
+    <script src="ejercicio2.js"></script>
+</body>
+</html>
+
