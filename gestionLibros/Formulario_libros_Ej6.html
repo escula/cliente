@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 20px;
+      background-color: #f5f5f5;
+    }
+
+    form {
+      max-width: 400px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #div_boton {
+      display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+#div_boton button {
+  margin: 0 10px; /* Ajusta según la separación que desees entre los botones dentro de div_boton */
+}
+
+    #resultado {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background-color: #fff;
+    }
+
+    .random-button {
+      margin-top: 10px;
+      background-color: #3498db;
+    }
+
+    .random-button:hover {
+      background-color: #2980b9;
+    }
+
+    .modify-button {
+      margin-top: 10px;
+      background-color: #e74c3c;
+    }
+
+    .modify-button:hover {
+      background-color: #c0392b;
+    }
+  </style>
+  <script defer src="index.js"></script>
+</head>
+<body>
+  <form onsubmit="onSubmitForm(event)">
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" required>
+
+    <label for="autor">Autor:</label>
+    <input type="text" id="autor" required>
+
+    <label for="paginas">Número de Páginas:</label>
+    <input type="number" id="paginas" required>
+
+    <label for="precio">Precio:</label>
+    <input type="number" id="precio" required>
+
+  </form>
+</br>
+  <div id="div_boton">
+    <button  onclick="guardarLibro()">Guardar</button>
+    <button  onclick="visualizarLibros()">Mostrar Libros</button>
+    <button  onclick="iterarLibro()">Iterar Libros</button>
+    <button onclick="generarLibroAleatorio()">Generar Aleatorio</button>
+    <button  onclick="cambiarPrecio()">Cambio Precio</button>
+    <button  onclick="mostrarPagina()">Leer Página</button>
+  </div>
+  <div id="resultado">
+    Resultado
+  </div>
+</body>
+</html>
+
+
