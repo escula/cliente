@@ -6,8 +6,18 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src='index.js'></script>
+    <!-- 
+        Crea una página web que contenga un elemento <div> con el ID "miObjeto". Implementa la función `mostrarInformacion(evento)` que, al ocurrir los eventos de clic, 
+        pasar el ratón por encima o presionar teclas, muestre información relevante sobre el evento:
+    tipo de evento, 
+    el código de tecla (solo en evento de presionar tecla) 
+    las coordenadas del ratón 
+    las coordenadas de la pantalla  
+
+    Experimenta haciendo clic, moviendo el ratón y presionando teclas para ver la información generada por cada evento. 
+     -->
 </head>
 <body>
-    <div onclick="pulsar(event)" onkeydown="pulsar(event)" tabindex="0">dadsad</div>
+    <div id="miObjeto" onclick="mostrarInformacion(event)" onkeydown="mostrarInformacion(event)" tabindex="0">Pulse el div</div>
 </body>
 </html>

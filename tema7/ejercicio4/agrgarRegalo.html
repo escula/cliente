@@ -1,0 +1,27 @@
+<!-- Genera un HTML donde tengamos un botón. Al pulsarlo vamos a Añadir nuevos elementos al documento (img)
+Tips:
+Para crear los elementos debo usar document.createElement()
+Para modificar su tamaño puedo utilizar style.width ; style.height
+Para modificar su posición puedo utilizar style.left = posX ; style.top = posY
+Para añadirlo al documento debo usar document.body.appendChild() -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        img{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="agregarBoton()">Agregar regalo</button>
+</body>
+</html>

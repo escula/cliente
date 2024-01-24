@@ -3,15 +3,14 @@ let vecesTocadas=0;
 campana.addEventListener('click',function name(event) {
     vecesTocadas++;
     if(vecesTocadas<12){
-        let parrafo=document.getElementById('p');
+        let parrafo=document.getElementById('parrafo');
         parrafo.innerHTML='Campanada '+ vecesTocadas;
-        document.body.appendChild(parrafo);
     }
     if(vecesTocadas===12){
-        let parrafo=document.createElement('p');
+        let parrafo=document.getElementById('parrafo');
+        parrafo.style.color="yellow"
         parrafo.innerHTML='Feliz Año';
-        document.body.appendChild(parrafo);
+        event.currentTarget.parentNode.style.backgroundImage='url("fueosArtificiales.png")';
         
     }
-    event.currentTarget;
 });

@@ -1,4 +1,4 @@
-function pulsar(e){
+function mostrarInformacion(e){
     let ratonEjeX=e.clientX;
     let ratonEjeY=e.clientY;
     let tipoEvento= e.type;

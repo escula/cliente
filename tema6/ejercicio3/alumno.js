@@ -17,6 +17,8 @@ class Alumno{
         console.log(this)
     }
     visualizar() {
-        document.write(this.nombre,this.apellidos,this.edad,this.genero,this.curso,this.direccion);
+        let elemento=document.createElement("p");
+        elemento.innerHTML=" Nombre: "+this.nombre+" Apellidos: "+this.apellidos+" Edad: "+this.edad+" Genero: "+this.genero+" Curso: "+this.curso+ " Direccion: "+this.direccion;
+        document.body.appendChild(elemento);
     }
 }

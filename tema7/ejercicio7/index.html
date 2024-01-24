@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+    <!-- 
+Modifica el HTML del ejercicio 6. Genera un botón que modifique el 
+texto mostrado por el div cada vez que se le haga click.
+     -->
+     <style>
+        html{
+        background-color: green;
+        }
+        body{
+            height: 100vh;
+            position:relative;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            padding: 50px;
+            background-color: red;
+
+        }
+        div > p{
+            color: white;
+            user-select: none; 
+            font-size: 1em;
+        }
+     </style>
+</head>
+
+<body>
+    <div id="div" ondblclick="cambiarEstilas()">
+        <p id="parrafo">Haz doble clic par acambiar de estilo</p>
+    </div>
+    <button onclick="cambiarFrase()">Cambiar texto</button>
+    
+</body>
+</html>

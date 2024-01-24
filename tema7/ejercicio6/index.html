@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+    <!-- 
+        Genera un HTML con fondo verde y con un div central de color rojo
+         y un rotulo con letra blanca y tamaño pequeña. Al hacer doble click 
+         sobre el div la letra va a cambiar de tamaño y color y el fondo del div de color. 
+         Cada vez que haga doble click va a ir cambiando en orden entre:
+ tamaño pequeña, color de letra blanco y color de contenedor rojo
+Tamaño mediano, color de letra morado y color de contenedor amarillo
+Tamaño grande, color de letra negro y color de contenedor azul
+
+Tip: Usar dom con las propiedades style. y evento ondblclick del div 
+     -->
+     <style>
+        html{
+        background-color: green;
+        }
+        body{
+            height: 100vh;
+            position:relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            padding: 50px;
+            background-color: red;
+
+        }
+        div > p{
+            color: white;
+            user-select: none; 
+            font-size: 1em;
+        }
+     </style>
+</head>
+
+<body>
+    <div id="div" ondblclick="cambiarEstilas()">
+        <p id="parrafo">Haz doble clic par acambiar de estilo</p>
+    </div>
+</body>
+</html>

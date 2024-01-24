@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Crea una página web simple que utilice los eventos load 
+        y resize en JavaScript para realizar acciones 
+        específicas cuando se cargue la página y 
+        cuando cambie el tamaño de la ventana del navegador. ( con addEventListener)
+
+        Al cargar la página debe llamar a la función hola() y dar un mensaje de bienvenida en un div existente en el HTML 
+        Al modificar el tamaño de pantalla debe cambiar una imagen que haya en el centro de la pantalla. Si el tamaño de la 
+    página menor de 500px la imagen mostrada gatoflaco.jpeg, entre 500 y 1000 px imagen gatomedio.jpeg y mas de mil 
+    imagen gatogordo.jpeg
+-->
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items:  center;
+            justify-content: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="mensaje" ></div>
+    <img id="imagen"src="" alt="">
+    <script src="index.js"></script>
+</body>
+</html>

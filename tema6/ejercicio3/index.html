@@ -10,16 +10,46 @@
 Para los docentes necesitaremos conocer: Nombre, Apellidos, edad genero y Asignaturas que imparten
 Para los alumnos necesitaremos conecer: Nombre, apellidos, edad, genero, cursos y direccion 
 Crear método constructor, visualizador y modificador
-Generar un document HTML que recoja un alumno, puedas modificar la erdad y devuelva a mostrar el alumnos y profesores en pantalla
+Generar un document HTML que recoja un alumno, puedas modificar la erdad y 
+devuelva a mostrar el alumnos y profesores en pantalla
 -->
 </head>
 <body>
-    <input type="text">
-    <input type="text">
-    <input type="text">
-    <input type="text">
-    <input type="text">
-    <input type="number">
+    <label for="">Nombre</label>
+    <input id="nombre" type="text">
+    <label for="">Apellidos</label>
+    <input id="apellido" type="text">
+    <label for="">Edad</label>
+    <input id="edad" type="number">
+    <label for="">Genero</label>
+    <input id="genero"type="text">
+    <label for="">Curso</label>
+    <input id="curso" type="text">
+    <label for="">Direccion</label>
+    <input id="direccion" type="text">
+
+    <button id="guardarAlum" onclick="guardarAlumno()">guardar Alumno</button>
+</br>
+    <label for="">Nombre</label>
+    <input id="nombrePro" type="text">
+    <label  for="">Apellidos</label>
+    <input id="apellidoPro" type="text">
+    <label  for="">Edad</label>
+    <input id="edadPro" type="number">
+    <label  for="">Genero</label>
+    <input id="generoPro" type="text">
+    <label for="">Asignatura</label>
+    <input id="asignaturaPro" type="text">
+
+    <button id="guardarPro" onclick="guardarProfesor()">Guardar Profesor</button>
+    </br>
+    <button onclick="mostrarProfeyAlumno()">Mostrar Profe y alumno</button>
+    
+    <br>
+    <p>Modificar edad por el id del array</p>
+    <input type="number" name="" id="AlumnoModificar" placeholder="id de alumno">
+    <input type="number" name="" id="nuevaEdad" placeholder="nueva edad">
+    <button onclick="cambiarEdad()">Cambiar edad</button>
 </body>
     <script  src="alumno.js"></script>
     <script  src="docente.js"></script>
