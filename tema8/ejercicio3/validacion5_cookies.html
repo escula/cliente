@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Cookies en JavaScript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f3e6; 
+      color: #24170e; 
+      margin: 20px;
+    }
+
+    h1 {
+      color: #24170e; 
+    }
+
+    form {
+      background-color: #f9f3e6; 
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      max-width: 400px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      border: 1px solid #24170e; 
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #24170e;
+      color: #f9f3e6; 
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #24170e;
+    }
+
+    #cookieDisplay {
+      background-color: #f9f3e6; 
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .cookie-item {
+      margin-bottom: 8px;
+    }
+
+    .error-message {
+      color: red;
+      margin-top: 5px;
+    }
+
+    .transparent-error-box {
+      background-color: rgba(255, 0, 0, 0.1);
+      padding: 5px;
+      border-radius: 4px;
+    }
+  </style>
+  <script async src="ejercicio4.js"></script>
+  <!-- Ejercicio: Dado el formulario validaciones3,
+     implementa una gestión de cookies donde puedas 
+     insertar los valores y guardar una cookie. Añadir 
+     un botón donde poder visualizarlas
+
+Los valores deben ser obligatorios y si no están 
+rellenos debe aparecer un mensaje justo debajo del 
+campo indicando que debe ser rellenado y solo se pueden enviar cuando no haya errores
+ -->
+</head>
+<body>
+
+<h1>Gestión de Cookies</h1>
+
+<form id="cookieForm">
+  <label for="cookieName">Nombre de la Cookie:</label>
+  <input type="text" id="cookieName" name="cookieName" placeholder="idioma_preferente">
+
+  <label for="cookieValue">Valor de la Cookie:</label>
+  <input type="text" id="cookieValue" name="cookieValue" placeholder="es">
+
+  <label for="cookieDays">Duración en días:</label>
+  <input type="number" id="cookieDays" name="cookieDays" placeholder="30">
+
+  <button type="button" onclick="guardarCookie()">Guardar Cookie</button>
+  <button type="button" onclick="mostrarCookies()">Visualizar Cookies</button>
+</form>
+
+<div id="cookieDisplay" style="display:none;">
+  <h2>Cookies Existentes</h2>
+  <div id="cookiesList"></div>
+</div>
+
+</body>
+</html>
