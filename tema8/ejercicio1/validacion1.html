@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Pedido de Zapatillas</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 20px;
+      background-color: #f5f5f5;
+    }
+
+    form {
+      max-width: 400px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    input[type="submit"] {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    #errorMensaje {
+      color: red;
+    }
+    /* Dado un formulario para realizar pedidos de zapatillas personalizadas. El formulario debe recopilar la siguiente información:
+
+Un campo de texto donde el usuario ingresa su nombre. ( obligatorio, solo letras y 2 apellidos)
+Talla de Zapatillas: Debe tener al menos una seleccionada
+Colores: Debe incluir al menos una opción marcada.
+
+Muestra mensajes de error con alert cuando no ocurra y cuando lo cumpla un mensaje de envío correcto y resetea el valor del formulario
+ */
+  </style>
+  <script async src="ejercicio1.js"></script>
+</head>
+<body>
+
+  <form id="formularioPedido" >
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre">
+
+    <label>Talla de Zapatillas:</label>
+   
+    <label><input type="radio" name="talla" value="37">37</label>
+    <label><input type="radio" name="talla" value="38">38</label>
+    <label><input type="radio" name="talla" value="39">39</label>
+    <label><input type="radio" name="talla" value="40">40</label>
+    <label><input type="radio" name="talla" value="41">41</label>
+    <!-- Agrega más tallas según sea necesario -->
+
+    <label>Colores:</label>
+    <label><input type="checkbox" name="color" value="rojo">Rojo</label>
+    <label><input type="checkbox" name="color" value="azul">Azul</label>
+    <label><input type="checkbox" name="color" value="verde">Verde</label>
+    <!-- Agrega más colores según sea necesario -->
+
+    <input type="submit" src="boton-comprobar.jpeg" alt="Comprobar Datos">
+  </form>
+
+</body>
+</html>
