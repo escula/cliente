@@ -17,10 +17,6 @@ function guardarCookie(){
 function mostrarCookies() {
     const cookiesGuaredas=document.cookie.split('; ')
 
-    console.log("antes de for")
-    console.log(cookiesGuaredas)
-    console.log("----------------")
-
     cookiesGuaredas.forEach(cadacookie => {
         const nombreCookieYValorCookie=cadacookie.split('=')
 
