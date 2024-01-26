@@ -78,6 +78,27 @@
             cursor: pointer;
         }
     </style>
+    <!-- 
+        Realiza un formulario para comprar un billete de tren. Debe contener:
+Un campo con el nombre de usuario 
+Un campo con la fecha del viaje 
+Dos campos radiobutton con las opciones ida / ida y vuelta
+Origen: , un input texto que diga ‘Atocha Cercanías’ y sea no editable
+Destino: Dos elementos “select”. Al cambiar el primero, se actualizará el segundo. 
+Cuando no tengan ninguna selección previa, los “select” mostrarán “Select no seleccionado”.
+
+Los valores del primer “select” seran “Alicante” y  “Valencia”.Por defecto no habrá ninguno seleccionado.
+Los valores del segundo “select” son: Para Alicante: “Alicante Capital”, “Elche”, “Orihuela”.
+Para Valencia: “Valencia Capital”, “Torrent”, “Mislata”. 
+(Aquí saldrá por defecto seleccionado “Mislata”).
+
+Validaciones
+Nombre de usuario : debe estar completo y tener nombre, apellido ( al menos uno) y ser solo letras.
+Fecha: formato DD/MM/AAAA y ser una fecha válida del año actual y no en el pasado
+ida / ida y vuelta: marcado uno de los dos
+El origen, un input texto que diga Madrid , estación sur fijo y no editable
+Destino: Al cambiar el primero, se actualizará el segundo. Ambos deben estar rellenos
+     -->
 </head>
 <body>
     <header>

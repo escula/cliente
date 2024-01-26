@@ -1,7 +1,8 @@
 const destinos={
     "Destinos":[
         {"Alicante":["Alicante Capital","Elche","Orihuela"]},
-        {"Valencia":["Mislata","Valencia Capital","Torrent"]}
+        {"Valencia":["Mislata","Valencia Capital","Torrent"]},
+        {"Seleccione destino":['Comprar billete']}
         ]
 
 }
@@ -71,13 +72,16 @@ document.querySelector('form').addEventListener('submit',(e)=>{
     //Comprobando que si o si pongan la frase Madrid , estación sur fijo en origen
     if(document.getElementById('origen').value !== "Madrid , estación sur fijo"){
         window.alert("Origen es incorrecto debe poner exactamente:Madrid , estación sur fijo")
+        return false
     }
 
     //Se introduce en el if cuando no se elige un destino
-    if(document.getElementById('segundodestino').value === "Select no seleccionado"){
+    if(document.getElementById('segundodestino').value === "Select no seleccionado" || document.getElementById('segundodestino').value === "Comprar billete"){
         window.alert("seleecione el destino")
+        return false
     }
 
+    window.alert("Se ha enviado la información correctamente")
 
 })
 
