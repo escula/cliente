@@ -77,7 +77,7 @@ class Libro{
         
         let paginasTotalesLibro=Math.floor(Math.random()* (libros['paginasMaximas']-libros['paginasMinimas']+1)+libros['paginasMinimas']);
         
-        let costeLibro=Math.floor(Math.random()* (libros['costeMinimo']-libros['costeMinimo']+1)+libros['costeMinimo']);
+        let costeLibro=Math.floor(Math.random()* (libros['costeMaximo']-libros['costeMinimo']+1)+libros['costeMinimo']);
 
         return new Libro(nombreLibro,autorLibro,paginasTotalesLibro,costeLibro);
     }
