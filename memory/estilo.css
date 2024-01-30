@@ -1,0 +1,44 @@
+body { 
+		background-color: rgb(152, 152, 152);	
+		/* background-color: rgb(36, 36, 36);	 */
+	}
+
+	h1{
+		font-family: Verdana, Arial;
+		font-size: 30px;
+		text-align: center;
+	}
+
+	table{
+		margin: 0 auto;
+	}
+
+	textarea{
+		display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 20px;
+	}
+
+	p{
+		text-align: left;
+		margin-left: 5px;
+	}
+
+	#area{
+		width: 400px;
+		margin: 0 auto;
+	}
+
+	#area1{
+		float: left;
+	}
+
+	#area2{
+		float: right;
+	}
+
+	#boton{
+		width: 400px;
+		margin: 5px auto;
+	}
