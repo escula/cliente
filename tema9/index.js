@@ -1,11 +1,11 @@
 // Crear un nuevo objeto XMLHttpRequest
 
 
-function () {
+function mostrar1() {
     var xhr = new XMLHttpRequest();
 
     // Configurar la solicitud con el método HTTP y la URL
-    xhr.open('GET', 'http://localhost/pagina1.txt', true);
+    xhr.open('GET', 'pagina1.txt', true);
 
     // Configurar la función de devolución de llamada que se ejecutará cuando la solicitud se complete
     xhr.onreadystatechange = function () {
