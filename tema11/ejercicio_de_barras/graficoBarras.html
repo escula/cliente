@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        Tomar como origen la página HTML de zapatillas. 
+
+        Generar mediante Chart.js una tabla que indique cuantas zapatillas quedan de cada talla, siendo los datos
+
+        Talla 35: 3 pares
+        Talla 36: 0 pares
+        Talla 37: 7 pares
+        Talla 38: 1 pares
+        Talla 39: 0 pares
+        Talla 40: 5 pares
+        Talla 41: 3 pares
+     -->
+     <style>
+        canvas {
+            width: 400px; /* Ancho deseado */
+            height: 400px; /* Alto deseado */
+        }
+    </style>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Disponibilidad de zapatillas por talla</h1>
+
+    <img src="zapato.jpg" alt="zapatao">
+
+    <canvas id="chartCanvas" width="100px"></canvas>
+
+    <script>
+        // Datos de las tallas de zapatillas
+
+
+
+        // Crear el gráfico de barras
+        const myChart = new Chart($('#chartCanvas'), {
+            type: 'bar', //indica el tipo mas tipos: line
+            data: {
+                labels: ['Talla 35', 'Talla 36', 'Talla 37', 'Talla 38', 'Talla 39', 'Talla 40', 'Talla 41'], //eje horizontal
+                datasets: [{
+                    label: 'Pares Disponibles',
+                    data: [3, 0, 7, 1, 0, 5, 3], //eje vertical
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)', //primera columna
+                        'rgba(54, 162, 235, 0.2)', //Segunda columna
+                        'rgba(255, 206, 86, 0.2)', //tercera columna
+                        'rgba(75, 192, 192, 0.2)', //cuarta columna
+                        'rgba(153, 102, 255, 0.2)',//quinto columna
+                        'rgba(255, 159, 64, 0.2)', //sexta columna
+                        'rgba(54, 162, 235, 0.2)'  // septima columna
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',//primera column
+                        'rgba(54, 162, 235, 1)',//Segunda column
+                        'rgba(255, 206, 86, 1)',//tercera column
+                        'rgba(75, 192, 192, 1)',//cuarta columna
+                        'rgba(153, 102, 255, 1)',//quinto columna
+                        'rgba(255, 159, 64, 1)',//sexta columna
+                        'rgba(54, 162, 235, 1)'// septima columa
+                    ],
+                    borderWidth: 1
+                }]
+            }
+        });
+</script>
+</body>
+</html>

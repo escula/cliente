@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Crea un html con un campo de texto y un botón
+    - saludar
+    Se debe añadir un nombre e imprimir en pantalla HOLA ‘nombre’ mediante JQUERY -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Función con 1 parámetro - Saludo</h1>
+    <label for="nombre">Introduce un nombre:</label>
+    <input type="text" id="nombre" placeholder="Nombre">
+    <button id="btnSaludar">Saludar</button>
+    <div id="resultado"></div>
+
+    <script>
+        //Obtener boton y realizando un evento click
+
+        $("#btnSaludar").click(function(eventoJquery) {
+            const nombre=$("#nombre").val()
+            console.log(nombre.length)
+            if(nombre.length){
+                $("#resultado").text("Hola "+nombre+" !!")
+            }else{
+                $("#resultado").text("No has introducido ningún nombre")
+            }
+
+        })
+    </script>
+</body>
+</html>

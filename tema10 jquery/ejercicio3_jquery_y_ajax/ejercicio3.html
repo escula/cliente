@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Repetir ejercicio Ajax del tema 9 con tecnología JQUERY
+    Realiza una página html que tenga 3 botónes en forma de menú. 
+    Cada uno de los botones traerá mediante Ajax una página txt determinada, esta vez con tecnología JQUERY 
+    -->
+</head>
+<body>
+    <button id="pagina1">pagina 1</buttonid>
+    <button id="pagina2">pagina 2</button>
+    <button id="pagina3">pagina 3</button>
+    <div id="resultado"></div>
+    <script>
+
+
+
+    $('#pagina1').click(()=>{
+        $.get(
+        "pagina1.txt", function(response) { 
+            $('#resultado').text(response)
+        }).fail(function(xhr, status, error) { 
+            console.error(error); // Manejar el error 
+        });
+    });
+
+    $('#pagina2').click(()=>{
+        $.get(
+        "pagina2.txt", function(response) { 
+            $('#resultado').text(response)
+        }).fail(function(xhr, status, error) { 
+            console.error(error); // Manejar el error 
+        });
+    });
+
+    $('#pagina3').click(()=>{
+        $.get(
+        "pagina3.txt", function(response) { 
+            $('#resultado').text(response)
+        }).fail(function(xhr, status, error) { 
+            console.error(error); // Manejar el error 
+        });
+    });
+
+        // Tambien se puede hacer de la siguiente manera->
+
+        // $('#pagina1').click(()=>{
+
+        //     $.ajax( {  
+        //         method:"GET", 
+        //         url:"pagina1.txt"
+        //     })  
+        //     .done(function(msg) {   
+
+        //         $('#resultado').text(msg)
+                
+        //     })
+        //     .fail(function() {   
+        //         console.log("❌");  }
+        //         )  
+        //     .always(function() {   
+        //         console.log("✅");  }
+        //     );
+        //     });
+
+
+
+    </script>
+</body>
+</html>

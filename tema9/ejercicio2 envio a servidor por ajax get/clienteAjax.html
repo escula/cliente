@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script async src="clienteAjax.js"></script>
+    <!-- Crear una página web que permita al usuario ingresar un parámetro
+         en un campo de texto. 2. Al hacer clic en un botón, se enviará una 
+         solicitud AJAX al servidor utilizando el método GET, pasando el 
+         parámetro ingresado como parte de la URL. El servidor recibirá 
+         el parámetro, devolverá un mensaje indicando el valor recibido y 
+         uno de error si no recibe ningún parámetro. Este mensaje se mostrará 
+         en la página web. 
+    -->
+
+</head>
+<body>
+    <form id="formulario" action="get">
+        <label for="parametro">Ingrese un parámetro</label>
+        <input type="text" name="parametroIntroducido" id="parametro">
+        <button>ObtenerDato</button>
+    </form>
+    <div id="resultado"></div>
+</body>
+</html>
